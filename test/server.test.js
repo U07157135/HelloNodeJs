@@ -36,7 +36,7 @@ test("GET / returns Hello Node.js", async () => {
 
   assert.equal(response.status, 200);
   assert.equal(response.headers.get("content-type"), "text/plain; charset=utf-8");
-  assert.equal(body, "Hello Node.js");
+  assert.equal(body, "Hello Node.js Hello Jason");
 });
 
 test("GET /healthz returns ok", async () => {
